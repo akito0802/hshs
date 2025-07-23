@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R&B 解説サイト</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #baccf7, #a7f3fb, #e9f1fb, #f8cbfe);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #333;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            color: #fff;
+            text-shadow: 1px 1px 3px #00000050;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: #ffffffaa;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 250px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.5em;
+            color: #333;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+        .card:nth-child(1) { border: 3px solid #baccf7; }
+        .card:nth-child(2) { border: 3px solid #a7f3fb; }
+        .card:nth-child(3) { border: 3px solid #e9f1fb; }
+        .card:nth-child(4) { border: 3px solid #f8cbfe; }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>R&B 解説サイト</h1>
+        <p>時代別・ジャンル別にR&Bを深掘り</p>
+    </header>
+    <div class="container">
+        <div class="card">50’s R&B</div>
+        <div class="card">60’s R&B</div>
+        <div class="card">70’s R&B</div>
+        <div class="card">80’s R&B</div>
+        <div class="card">90’s R&B</div>
+        <div class="card">2000’s R&B</div>
+        <div class="card">2010’s〜現代</div>
+    </div>
+    <footer>
+        © 2025 R&B 解説サイト
+    </footer>
+</body>
+</html>
